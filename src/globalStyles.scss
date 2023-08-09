@@ -1,0 +1,86 @@
+//colors
+$primary-color: #ffffff;
+$secondary-color: #34d399;
+$ternary-color: #e4e4e7;
+
+//bg color
+$bg-primary: #000000;
+$bg-secondary: #1c1c1f;
+$tw-gradient-to: #138861;
+
+$breakpoint-sm: 600px; // Breakpoint for small devices (phones) up to 600px
+$breakpoint-md: 768px; // Breakpoint for medium devices (tablets) from 768px to 991px
+$breakpoint-lg: 992px; // Breakpoint for large devices (desktops) from 992px to 1199px
+$breakpoint-xl: 1200px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background: $bg-primary;
+  background: -webkit-linear-gradient(
+    to right,
+    $bg-secondary,
+    $bg-primary
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    $bg-secondary,
+    $bg-primary
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1.5rem;
+}
+
+.ham-menu {
+  display: flex;
+  flex-direction: column;
+
+  color: $primary-color;
+
+  gap: 20px;
+  li {
+    list-style: none !important;
+  }
+  button {
+    color: #ffffff;
+    background: -webkit-linear-gradient(
+      to bottom,
+      $secondary-color,
+      $tw-gradient-to
+    );
+    background: linear-gradient(to bottom, $secondary-color, $tw-gradient-to);
+    width: 90vw;
+    border-radius: 14px;
+    padding: 9px;
+    border: none;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  main {
+    padding-inline: 0.5rem;
+  }
+}

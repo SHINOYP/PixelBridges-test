@@ -1,0 +1,52 @@
+@import "../../globalStyles.scss";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: $ternary-color;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.btn-LaunchApp {
+  padding: 10px 15px;
+  height: 40px;
+  border: none;
+  border-radius: 24px;
+  color: $ternary-color;
+  background-color: $secondary-color;
+}
+
+.btn-hamburger {
+  display: none;
+}
+
+.btn-hamburger:active {
+  border: 1px solid $ternary-color;
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .btn-hamburger {
+    display: flex;
+
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .btn-LaunchApp {
+    display: none;
+  }
+  nav {
+    padding-inline: 10px;
+  }
+  nav span {
+    display: none;
+  }
+}

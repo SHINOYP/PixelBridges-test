@@ -1,0 +1,35 @@
+@import "../../globalStyles.scss";
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: $ternary-color;
+  width: 100vw;
+  div {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  footer {
+    justify-content: space-between;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  footer {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 0rem;
+    padding-bottom: 2rem;
+    div {
+      display: flex;
+     
+    }
+  }
+}
