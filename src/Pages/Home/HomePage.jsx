@@ -2,6 +2,7 @@ import "./HomeStyles.scss";
 import Layout from "../../Componets/Layout/Layout";
 import AribtrumIcon from "../../assets/svgs/section1/Arbitrum.svg";
 import Homescrt from "../../assets/Images/Homescrt.svg";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Home = () => {
   return (
@@ -14,14 +15,14 @@ const Home = () => {
         </p>
         <div className="home-brands">
         <h4>AVAILABLE ON</h4>
-        <img src={AribtrumIcon} alt="AribtrumIcon " />
+        <LazyLoadImage src={AribtrumIcon} alt="AribtrumIcon " />
         </div>
         <div className="home-brands">
           <h4>AVAILABLE ON</h4>
-          <img src={AribtrumIcon} alt="AribtrumIcon " />
+          <LazyLoadImage src={AribtrumIcon} alt="AribtrumIcon " />
         </div>
       </section>
-      <img
+      <LazyLoadImage
         src={Homescrt}
         alt="Screenshot of a window"
         className="home-screenshot"

@@ -51,29 +51,7 @@ main {
 }
 
 .ham-menu {
-  display: flex;
-  flex-direction: column;
-
-  color: $primary-color;
-
-  gap: 20px;
-  li {
-    list-style: none !important;
-  }
-  button {
-    color: #ffffff;
-    background: -webkit-linear-gradient(
-      to bottom,
-      $secondary-color,
-      $tw-gradient-to
-    );
-    background: linear-gradient(to bottom, $secondary-color, $tw-gradient-to);
-    width: 90vw;
-    border-radius: 14px;
-    padding: 9px;
-    border: none;
-    margin-inline: auto;
-  }
+  display: none;
 }
 
 @media screen and (max-width: $breakpoint-md) {
@@ -82,5 +60,32 @@ main {
 @media screen and (max-width: $breakpoint-sm) {
   main {
     padding-inline: 0.5rem;
+  }
+
+  //hamnigure menu styles only apply screen size small haha 
+  .ham-menu {
+    display: flex;
+    flex-direction: column;
+
+    color: $primary-color;
+
+    gap: 20px;
+    li {
+      list-style: none !important;
+    }
+    button {
+      color: #ffffff;
+      background: -webkit-linear-gradient(
+        to bottom,
+        $secondary-color,
+        $tw-gradient-to
+      );
+      background: linear-gradient(to bottom, $secondary-color, $tw-gradient-to);
+      width: 90vw;
+      border-radius: 14px;
+      padding: 9px;
+      border: none;
+      margin-inline: auto;
+    }
   }
 }
